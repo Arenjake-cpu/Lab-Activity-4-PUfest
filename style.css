@@ -1,0 +1,133 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f0f8ff;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(90deg, #004aad, #0077b6);
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #ffdd00;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: white;
+  border-bottom: 2px solid #ffdd00;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+  background: white;
+  margin: 25px auto;
+  max-width: 950px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #004aad;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 280px;
+  border-radius: 14px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
+}
+
+video {
+  margin-top: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.event-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.event-list li {
+  background: #eaf4ff;
+  margin: 12px auto;
+  padding: 14px;
+  border-radius: 10px;
+  width: 80%;
+  text-align: left;
+  border-left: 6px solid #0077b6;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+#scrollTop {
+  background: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 25px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#scrollTop:hover {
+  background: #0077b6;
+}
+
+footer {
+  background: #002b5b;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+}
+
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery img {
+    width: 90%;
+  }
+}
